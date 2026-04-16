@@ -10,7 +10,6 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
-
 @Table(name = "watch", indexes = {
         @Index(name = "IDX_WATCH_MARK", columnList = "mark"),
         @Index(name = "IDX_WATCH_CREATED_AT", columnList = "createdAt"),

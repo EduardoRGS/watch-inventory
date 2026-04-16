@@ -32,10 +32,10 @@ public class WatchMapper {
     }
 
     private String waterResistanceLabel (int resistanceM) {
-        if (resistanceM < 50) return "respingos";
-        if (resistanceM < 100) return "Uso_diario";
-        if (resistanceM < 200) return "natacao";
-        return "mergulho";
+        if (resistanceM < 50) return "SPLASH";
+        if (resistanceM < 100) return "DAILY_USE";
+        if (resistanceM < 200) return "SWIMMING";
+        return "DIVING";
     }
 
     private int collectorScore (Watch w) {
@@ -50,7 +50,7 @@ public class WatchMapper {
         if (w.getWaterResistanceM() >= 100) points +=15;
         if(w.getWaterResistanceM() >= 200) points +=10;
 
-        if (w.getThicknessMm() >= 38 && w.getThicknessMm() <= 42) points+=42;
+        if (w.getDiameterMm() >= 38 && w.getDiameterMm() <= 42) points += 13;
 
         return points;
 
