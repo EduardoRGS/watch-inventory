@@ -1,4 +1,4 @@
-package com.watch_inventory.watch_inventory;
+package com.watch_inventory;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
